@@ -24,8 +24,4 @@ Valid Credential Template
     Input Password    id=inputPassword    ${password}
     Click Element    xpath=//button[@class='btn btn-next btn-40 d-flex align-items-center pl-4 pr-4 pt-1 ng-tns-c78-0']
     Set Selenium Implicit Wait    30s
-    Click Element    xpath=//button[text()='Got it']
-    Input Text    id=searchUsers    ${username}
-    Click Element    xpath=//p[text()='Pradhum Kumar Mandal : 11815178 (me)']
-    Click Element    id=chat-input
-    Input Text    id=chat-input    hi
+    Page Should Contain    ${value}
